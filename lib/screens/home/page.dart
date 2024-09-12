@@ -1,6 +1,4 @@
 import 'dart:ui';
-
-import 'package:crystal_navigation_bar/crystal_navigation_bar.dart';
 import 'package:demoapp/components/home/near_you.dart';
 import 'package:demoapp/screens/jatin/page.dart';
 import 'package:demoapp/screens/map/page.dart';
@@ -455,14 +453,18 @@ class _Chi extends State<Home> {
                   children: [
                     IconButton(
                       onPressed: () {
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=> const Home()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const Home()));
                       },
                       icon: Icon(IconlyBold.home),
                       color: Colors.white,
                     ),
                     IconButton(
                       onPressed: () {
-                         Navigator.push(context, MaterialPageRoute(builder: (context)=>  MyMap()));
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => MyMap()));
                       },
                       icon: Icon(Icons.map_outlined),
                       color: Colors.white,
